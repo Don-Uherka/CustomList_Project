@@ -1,2 +1,17 @@
 C:\Users\uherk\source\repos\CustomList\CustomListTestProject\obj\Debug\CustomListTestProject.csprojAssemblyReference.cache
 C:\Users\uherk\source\repos\CustomList\CustomListTestProject\obj\Debug\CustomListTestProject.csproj.CoreCompileInputs.cache
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\CustomListTestProject.dll
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\CustomListTestProject.pdb
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\CustomList.exe
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\CustomList.pdb
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\CustomList.exe.config
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\obj\Debug\CustomListTestProject.csproj.CopyComplete
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\obj\Debug\CustomListTestProject.dll
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\obj\Debug\CustomListTestProject.pdb

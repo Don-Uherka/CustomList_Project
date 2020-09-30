@@ -22,7 +22,7 @@ namespace CustomListTestProject
             customList.Add(value1);
             customList.Add(value2);
             customList.Add(value3);
-            actual = customList.count;
+            actual = customList.Count;
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -36,7 +36,7 @@ namespace CustomListTestProject
             int actual;
             //act
             customList.Add(value1);
-            actual = customList.count;
+            actual = customList.Count;
             //assert
             Assert.AreEqual(expected, actual);
         }
@@ -94,7 +94,50 @@ namespace CustomListTestProject
             customList.Add(value3);
             customList.Add(value4);
             customList.Add(value5);
-            actual = customList.capacity;
+            actual = customList.Capacity;
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Add_FivePositiveValues_FourIndexFive()
+        {
+            //arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value1 = 1;
+            int value2 = 2;
+            int value3 = 3;
+            int value4 = 4;
+            int value5 = 5;
+            int expected = 5;
+            int actual;
+            //act
+            customList.Add(value1);
+            customList.Add(value2);
+            customList.Add(value3);
+            customList.Add(value4);
+            customList.Add(value5);
+            actual = customList[4];
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Add_FivePositiveValues_ThirdIndexFour()
+        {
+            CustomList<int> customList = new CustomList<int>();
+            int value1 = 1;
+            int value2 = 2;
+            int value3 = 3;
+            int value4 = 4;
+            int value5 = 5;
+            int expected = 4;
+            int actual;
+            //act
+            customList.Add(value1);
+            customList.Add(value2);
+            customList.Add(value3);
+            customList.Add(value4);
+            customList.Add(value5);
+            actual = customList[3];
             //assert
             Assert.AreEqual(expected, actual);
         }
