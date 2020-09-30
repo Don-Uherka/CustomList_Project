@@ -1,0 +1,2 @@
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\obj\Debug\CustomListTestProject.csprojAssemblyReference.cache
+C:\Users\uherk\source\repos\CustomList\CustomListTestProject\obj\Debug\CustomListTestProject.csproj.CoreCompileInputs.cache
