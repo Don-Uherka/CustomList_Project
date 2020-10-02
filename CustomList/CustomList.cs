@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CustomList
 {
-    public class CustomList<T>
+    public class CustomList<T> : IEnumerable
     {
         private int count;
         private int capacity;
@@ -54,6 +55,30 @@ namespace CustomList
             }
             _items[count] = item;
             count++;
+        }
+        public void Remove(T itemToRemove)
+        {
+            if (_items.Equals(itemToRemove))
+            {
+                T[] _temp;
+                _temp = new T[count];
+                for (int i = 0; i < count; i++)
+                {
+                    _temp[i] = _items[i];
+                }
+                
+            }
+            //Create a new list with only the values we want to keep
+            //loop through and look at each value, if/else
+            //if the value is not itemToRemove, put it in the new list
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            for (int i = 0; i < count; i++)
+            {
+                yield return _items[i];
+            }
         }
     }
 }

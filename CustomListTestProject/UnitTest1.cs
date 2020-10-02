@@ -141,5 +141,121 @@ namespace CustomListTestProject
             //assert
             Assert.AreEqual(expected, actual);
         }
+        [TestMethod]
+        public void Remove_OnePositiveVaules_CountTwo()
+        {
+            //arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value1 = 1;
+            int value2 = 2;
+            int value3 = 3;
+            int expected = 2;
+            int actual;
+            //act
+            customList.Add(value1);
+            customList.Add(value2);
+            customList.Add(value3);
+            customList.Remove(1);
+            actual = customList.Count;
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Remove_IndexZero_ValuesShiftDownIndex()
+        {
+            //arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value1 = 1;
+            int value2 = 2;
+            int value3 = 3;
+            int expected = 2;
+            int actual;
+            //act
+            customList.Add(value1);
+            customList.Add(value2);
+            customList.Add(value3);
+            customList.Remove(1);
+            actual = customList[0];
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Remove_AllIndexValues_CountZero()
+        {
+            //arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value1 = 1;
+            int value2 = 2;
+            int value3 = 3;
+            int expected = 0;
+            int actual;
+            //act
+            customList.Add(value1);
+            customList.Add(value2);
+            customList.Add(value3);
+            customList.Remove(1);
+            customList.Remove(2);
+            customList.Remove(3);
+            actual = customList.Count;
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Remove_OnePositiveValue_ValueOneIndexZero()
+        {
+            //arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value1 = 1;
+            int value2 = 2;
+            int value3 = 3;
+            int expected = 3;
+            int actual;
+            //act
+            customList.Add(value1);
+            customList.Add(value2);
+            customList.Add(value3);
+            customList.Remove(2);
+            actual = customList[1];
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Remove_SomethingNotInList()
+        {
+            //arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value1 = 1;
+            int value2 = 2;
+            int value3 = 3;
+            int expected = 3;
+            int actual;
+            //act
+            customList.Add(value1);
+            customList.Add(value2);
+            customList.Add(value3);
+            customList.Remove(500);
+            actual = customList.Count;
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void Remove_DuplicatedItem()
+        {
+            //arrange
+            CustomList<int> customList = new CustomList<int>();
+            int value1 = 1;
+            int value2 = 2;
+            
+            int expected = 1;
+            int actual;
+            //act
+            customList.Add(value1);
+            customList.Add(value2);
+            customList.Add(value1);
+            customList.Remove(1);
+            actual = customList[1];
+            //assert
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

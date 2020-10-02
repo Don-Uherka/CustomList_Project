@@ -11,8 +11,13 @@ namespace CustomList
     {
         static void Main(string[] args)
         {
-          
-            
+            //CustomList<int> myList = new CustomList<int> { 1, 2, 3 };
+
+            //foreach(int num in myList)
+            //{
+            //    Console.WriteLine(num);
+            //}
+            //Console.ReadLine();
         }
     }
 }
