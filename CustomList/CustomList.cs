@@ -58,16 +58,39 @@ namespace CustomList
         }
         public void Remove(T itemToRemove)
         {
-            if (_items.Equals(itemToRemove))
+            T[] _temp;
+            _temp = new T[capacity];
+            int j = 0;
+            
+            for (int i = 0; i < count; i++)
             {
-                T[] _temp;
-                _temp = new T[count];
-                for (int i = 0; i < count; i++)
+                
+                if (_items[i].Equals(itemToRemove))
                 {
-                    _temp[i] = _items[i];
+                    //don't transfer the item
                 }
+                else
+                {
+                    
+                    _temp[j] = _items[i];
+                    j++;
+                    count--;
+                    
+                   //transfer these items to new array
+                }
+                _items[i] = _temp[j];
                 
             }
+            
+            //A, B, C
+            //0, 1, 2
+
+            //Remove B
+
+            //A, C
+            //0, 1
+            
+
             //Create a new list with only the values we want to keep
             //loop through and look at each value, if/else
             //if the value is not itemToRemove, put it in the new list
